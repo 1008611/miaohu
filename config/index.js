@@ -35,7 +35,15 @@ module.exports = {
         // pathRewrite: {
         //   '^/news/latest': '/news/latest'
         // }
+      },
+        '/service/tabs/': {
+        target: 'http://lf.snssdk.com/neihan',
+        changeOrigin: true,
+        // pathRewrite: {
+        //   '^/news/latest': '/news/latest'
+        // }
       }
+
     },
     // CSS Sourcemaps off by default because relative paths are "buggy"
     // with this option, according to the CSS-Loader README

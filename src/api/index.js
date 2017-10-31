@@ -54,5 +54,8 @@ export default {
   },
   getHistory(data) {
     return axios.post('/api/news/feed/v51/', qs.stringify(data))
+  },
+  getNH(data) {
+    return axios.get('/service/tabs/')
   }
 }

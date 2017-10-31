@@ -20,7 +20,8 @@
         <mu-list-item v-else>
           <mu-card>
             <mu-card-text>{{item.text}}</mu-card-text>
-            <mu-flat-button v-if="item.url" @click="toDetail(item.url)" label="查看详情" labelPosition="before" icon=":fa fa-arrow-right"/>
+            <mu-flat-button v-if="item.url" @click="toDetail(item.url)" label="查看详情" labelPosition="before"
+                            icon=":fa fa-arrow-right"/>
           </mu-card>
           <mu-avatar slot="rightAvatar" icon=":fa fa-opencart"/>
         </mu-list-item>
@@ -61,7 +62,15 @@
 
       }
     },
+    created() {
+      this.initData()
+    },
     methods: {
+      initData() {
+        api.getNH().then(res => {
+          console.log(res)
+        })
+      },
       goBack() {
         this.$router.go(-1)
       },
@@ -88,7 +97,7 @@
           self.info = ""
         })
       },
-      toDetail(url){
+      toDetail(url) {
         window.open(url)
       },
     }
