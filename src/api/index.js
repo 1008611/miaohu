@@ -56,6 +56,6 @@ export default {
     return axios.post('/api/news/feed/v51/', qs.stringify(data))
   },
   getNH(data) {
-    return axios.get('/service/tabs/')
+    return axios.post('/stream/mix/v1/',qs.stringify(data))
   }
 }

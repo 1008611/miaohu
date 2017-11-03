@@ -9,6 +9,7 @@ import Theme from '../pages/Theme.vue'
 import Comment from '../pages/CommentDetail.vue'
 import Ask from '../pages/Ask.vue'
 import Toutiao from '../pages/Toutiao.vue'
+import NeiHan from '../pages/NeiHan.vue'
 
 Vue.use(Router)
 
@@ -54,9 +55,13 @@ export default new Router({
       name: 'Ask',
       component: Ask
     },{
-      path: '/history',
+      path: '/toutiao',
       name: 'Toutiao',
       component: Toutiao
+    },{
+      path: '/neihan',
+      name: 'NeiHan',
+      component: NeiHan
     },
   ]
 })

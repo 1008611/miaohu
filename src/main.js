@@ -8,10 +8,11 @@ import store from './store/index'
 import 'muse-ui/dist/muse-ui.css'
 import './assets/theme.less'
 import 'font-awesome/css/font-awesome.css'
-
+import VueVideoPlayer from 'vue-video-player'
 import VueImg from 'v-img';
 Vue.use(VueImg)
 Vue.use(MuseUI)
+Vue.use(VueVideoPlayer)
 require('swiper/dist/css/swiper.css')
 Vue.config.productionTip = false
 

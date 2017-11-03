@@ -28,8 +28,8 @@
         themeList: [
           {title:'cnode',path:'/cnode',icon:':fa fa-home'},
           {title:'gank',path:'/gank',icon:':fa fa-star'},
-          {title:'history',path:'/history',icon:':fa fa-share'},
-          {title:'csdn',path:'ask',icon:':fa fa-quora'},
+          {title:'toutiao',path:'/toutiao',icon:':fa fa-share'},
+          {title:'neihan',path:'/neihan',icon:':fa fa-quora'},
           {title:'sss',path:'job',icon:':fa fa-bank'},
         ],
         docked: true,

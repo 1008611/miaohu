@@ -36,7 +36,7 @@ module.exports = {
         //   '^/news/latest': '/news/latest'
         // }
       },
-        '/service/tabs/': {
+        '/stream/mix/v1/': {
         target: 'http://lf.snssdk.com/neihan',
         changeOrigin: true,
         // pathRewrite: {
